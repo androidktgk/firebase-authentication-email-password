@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity">
+  <View
+      android:id="@+id/vrDivIn"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_centerInParent="true"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_margin="20dp"
+      android:layout_above="@+id/vrDivIn">
+    <EditText
+        android:id="@+id/edtEmailIn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:paddingStart="30dp"
+        android:paddingEnd="10dp"
+        android:drawablePadding="15dp"
+        android:drawableStart="@drawable/icon_email_address"/>
+    <EditText
+        android:id="@+id/edtPassIn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:paddingStart="30dp"
+        android:paddingEnd="10dp"
+        android:drawablePadding="15dp"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/icon_password" />
+  </LinearLayout>
+
+  <Button
+      android:id="@+id/btnSignIn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/sign_in"
+      android:layout_below="@+id/vrDivIn"
+      android:layout_centerHorizontal="true"/>
+
+
+  </RelativeLayout>
